@@ -8,7 +8,6 @@
 }
 
 body {
-    height: 100vh;
     background-color: #081b29;
     color: #ededed;
     display: flex;
@@ -17,6 +16,7 @@ body {
 
 main {
     display: flex;
+    /* height: 100%; */
 }
 
 .header {
@@ -85,30 +85,41 @@ main {
 }
 
 
+.portfolio-content {
+    border: 5px solid #696969;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+    height: 300px;   
+}
+
+.portfolio-content p {
+    align-self: flex-end;
+
+}
+
 aside {
-    flex: 1;
+    flex: 0 0 25%;
     padding: 20px;
+    height: 300px;
+    /* border-right: 5px solid #696969; */
+    /* float: left; */
 }
 
 section {
-    flex: 3;
+    flex: 0 0 75%;
     padding: 20px;
     display: flex;
     height: 400px;
-    width: auto;
-    position: relative;
 }
 
 section p {
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-25%, -25%);
 }
 
 section a {
-    /* padding-right: 20px; */
     font-size: 16px;
     text-decoration: none;
     color: #ededed;
