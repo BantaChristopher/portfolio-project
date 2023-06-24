@@ -8,10 +8,15 @@
 }
 
 body {
+    height: 100vh;
     background-color: #081b29;
     color: #ededed;
     display: flex;
     flex-direction: column;
+}
+
+main {
+    display: flex;
 }
 
 .header {
@@ -53,26 +58,69 @@ body {
     text-decoration: none;
     padding-left: 25px;
     font-weight: 700;
+    transition: .3s;
 }
 
-main {
+.navbar a:hover,
+.navbar a.active {
+    color: #081b29
+}
+
+
+.portrait {
+    height: 300px;
+    width: 100%;
+    margin-top: 25px;
+    background-image: url("./photos/IMG_5110\ \(Edited\).PNG");
+    background-size: cover;
+    border: solid 5px #696969;
+    border-radius: 25px;
+    box-shadow: 5px 10px 10px;
+}
+
+.content-boxes {
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
 }
 
+
 aside {
     flex: 1;
     padding: 20px;
-  }
-  
+}
+
 section {
     flex: 3;
     padding: 20px;
-  }
+    display: flex;
+    height: 400px;
+    width: auto;
+    position: relative;
+}
 
-main aside h1 {
+section p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+}
+
+section a {
+    /* padding-right: 20px; */
+    font-size: 16px;
+    text-decoration: none;
+    color: #ededed;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.content-boxes aside h1 {
     text-align: center;
+    text-decoration: underline;
 }
 
 @keyframes cursor-blink {
@@ -82,5 +130,5 @@ main aside h1 {
   }
 
   .logo::after {
-    animation: cursor-blink 1.5s steps(2) infinite;
+    animation: cursor-blink 1s steps(2) infinite;
 }
