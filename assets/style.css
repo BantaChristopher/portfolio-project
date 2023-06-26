@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -87,36 +88,58 @@ main {
 
 .portfolio-content {
     border: 5px solid #696969;
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 300px;
-    height: 300px;   
+    flex: 1 1 500px;
+    height: 400px;   
 }
 
-.portfolio-content p {
-    align-self: flex-end;
-
+.horiseon {
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    background-image: url(./photos/horiseon-refactor.png);
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 aside {
     flex: 0 0 25%;
     padding: 20px;
-    height: 300px;
-    /* border-right: 5px solid #696969; */
-    /* float: left; */
 }
 
-section {
+section, div {
     flex: 0 0 75%;
-    padding: 20px;
     display: flex;
-    height: 400px;
+    flex-wrap: wrap;
 }
 
-section p {
-    margin: 0;
+.center {
+    align-items: center;
+    text-align: center;
+}
+
+.main-image {
+    flex: 3 1 100%;
+}
+
+section header {
+    position: relative;
+    height: 100%;
+    margin: 0px 10px;
+    top: -30px;
+    width: 100%;
+    z-index: 1;
+    padding: 5px;
+    border: 3px solid #696969;
+    background-color: #081b29;
+    
 }
 
 section a {
@@ -127,11 +150,19 @@ section a {
 
 .space {
     justify-content: space-between;
+    padding-right: 25px;
 }
 
 .content-boxes aside h1 {
     text-align: center;
     text-decoration: underline;
+}
+
+div section p {
+    width: 100%;
+    bottom: 25px;
+    position: relative;
+    font-weight: 700;
 }
 
 @keyframes cursor-blink {
