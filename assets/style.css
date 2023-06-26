@@ -62,10 +62,12 @@ main {
     transition: .3s;
 }
 
+
 .navbar a:hover,
-.navbar a.active {
+.navbar a:active {
     color: #081b29
 }
+
 
 
 .portrait {
@@ -96,11 +98,53 @@ main {
     height: 400px;   
 }
 
+.portfolio-content img:hover {
+    box-shadow: 5px 5px 5px #ededed;
+}
+
 .horiseon {
     height: 100%;
     width: 100%;
     padding: 2px;
     background-image: url(./photos/horiseon-refactor.png);
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.bootcamp {
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    background-image: url(./photos/code2);
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.css-cheat-sheet {
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    background-image: url(./photos/code3);
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.cool-project {
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    background-image: url(./photos/placeholder);
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.cooler-project {
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    background-image: url(./photos/placeholder2);
+    background-size: cover;
+    border-radius: 25px;
 }
 
 .container {
@@ -139,7 +183,7 @@ section header {
     padding: 5px;
     border: 3px solid #696969;
     background-color: #081b29;
-    
+    border-radius: 25px;
 }
 
 section a {
@@ -149,8 +193,7 @@ section a {
 }
 
 .space {
-    justify-content: space-between;
-    padding-right: 25px;
+    justify-content: space-evenly;
 }
 
 .content-boxes aside h1 {
@@ -165,6 +208,10 @@ div section p {
     font-weight: 700;
 }
 
+footer {
+    padding-bottom: 25px;
+}
+
 @keyframes cursor-blink {
     0% {
       opacity: 0;
@@ -173,4 +220,41 @@ div section p {
 
   .logo::after {
     animation: cursor-blink 1s steps(2) infinite;
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        flex: 0 0 100%
+    }
+    
+    section, div {
+        flex: 0 0 100%;
+    }
+
+    img .portrait {
+        padding: 0px 25px;
+    }
+    
+    .logo::after {
+        height: 10px
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .header a {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .header a {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .header a {
+        font-size: 50%;
+    }
 }
