@@ -169,6 +169,7 @@ section, div {
     flex-wrap: wrap;
 }
 
+/* centers the content that it is attached to */
 .center {
     align-items: center;
     text-align: center;
@@ -202,10 +203,12 @@ main section p {
     padding: 0px 20px;
 }
 
+/* spaces the footer out evenly */
 .space {
     justify-content: space-evenly;
 }
 
+/* To center and underline the side bar for the page */
 .content-boxes aside h1 {
     text-align: center;
     text-decoration: underline;
