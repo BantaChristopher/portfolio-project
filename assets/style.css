@@ -125,29 +125,29 @@ main {
     border-radius: 25px;
 }
 
-.css-cheat-sheet {
+.weather-app {
     height: 100%;
     width: 100%;
     padding: 2px;
-    background-image: url(./photos/code3);
+    background-image: url(./photos/Weather\ App.png);
     background-size: cover;
     border-radius: 25px;
 }
 
-.cool-project {
+.project1 {
     height: 100%;
     width: 100%;
     padding: 2px;
-    background-image: url(./photos/placeholder);
+    background-image: url(./photos/dndQuestforGlorySS.png);
     background-size: cover;
     border-radius: 25px;
 }
 
-.cooler-project {
+.js-quiz {
     height: 100%;
     width: 100%;
     padding: 2px;
-    background-image: url(./photos/placeholder2);
+    background-image: url(./photos/js-quiz-with-scoreboard.png);
     background-size: cover;
     border-radius: 25px;
 }
