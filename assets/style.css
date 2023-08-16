@@ -116,11 +116,11 @@ main {
     border-radius: 25px;
 }
 
-.bootcamp {
+.project1 {
     height: 100%;
     width: 100%;
     padding: 2px;
-    background-image: url(./photos/prework.png);
+    background-image: url(./photos/dndQuestforGlorySS.png);
     background-size: cover;
     border-radius: 25px;
 }
@@ -134,11 +134,11 @@ main {
     border-radius: 25px;
 }
 
-.project1 {
+.project2 {
     height: 100%;
     width: 100%;
     padding: 2px;
-    background-image: url(./photos/dndQuestforGlorySS.png);
+    background-image: url(./photos/bookify-site.png);
     background-size: cover;
     border-radius: 25px;
 }
