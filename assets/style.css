@@ -95,6 +95,7 @@ main {
 .portfolio-content {
     border: 5px solid var(--gray);
     margin: 20px;
+    padding-bottom: 50px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -107,11 +108,11 @@ main {
 }
 
 /* 5 different classes so that I could get 5 different images */
-.horiseon {
+.sidekick {
     height: 100%;
     width: 100%;
     padding: 2px;
-    background-image: url(./photos/horiseon-refactor.png);
+    background-image: url(./photos/SIDEKICK.png);
     background-size: cover;
     border-radius: 25px;
 }
